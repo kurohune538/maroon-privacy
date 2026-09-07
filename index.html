@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー | Maroon</title>
+<meta name="description" content="水平思考クイズアプリ Maroon のプライバシーポリシー">
+<style>
+  :root { color-scheme: light dark; --accent: #473be7; --fg: #1c1c1e; --muted: #6b6b70; --bg: #ffffff; --rule: #e5e5ea; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg: #ececf0; --muted: #a0a0a8; --bg: #16161a; --rule: #2f2f36; --accent: #9b91ff; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
+    line-height: 1.9; font-size: 16px;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+  h1 { font-size: 1.7rem; margin: 0 0 4px; letter-spacing: .01em; }
+  h2 { font-size: 1.15rem; margin: 40px 0 12px; padding-top: 20px; border-top: 1px solid var(--rule); }
+  p { margin: 0 0 16px; }
+  .updated { color: var(--muted); font-size: .9rem; margin-bottom: 28px; }
+  ul { margin: 0 0 16px; padding-left: 1.3em; }
+  li { margin-bottom: 10px; }
+  li.sub { list-style: none; margin-left: -.4em; color: var(--muted); font-size: .93rem; }
+  li.sub::before { content: "↳ "; }
+  a { color: var(--accent); overflow-wrap: anywhere; }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--rule); color: var(--muted); font-size: .85rem; }
+</style>
+</head>
+<body>
+<main>
+<h1>プライバシーポリシー</h1>
+<p class="updated">最終更新日: 2026年9月6日</p>
+<p>本プライバシーポリシーは、Maroon（以下「本アプリ」）における個人情報の取り扱いについて説明するものです。本アプリをご利用いただくことにより、本ポリシーに同意いただいたものとみなします。</p>
+<h2>1. 収集する情報</h2>
+<p>本アプリは以下の情報を収集します。</p>
+<ul>
+  <li><strong>匿名ユーザー識別子</strong>: アカウント登録なしで自動生成される匿名IDにより、ゲームの進捗やライフの管理を行います。氏名・メールアドレス等の個人を特定できる情報は収集しません。</li>
+  <li><strong>ゲーム進捗データ</strong>: クイズの回答履歴、クリア状況、ヒント使用回数などのプレイデータ。</li>
+  <li><strong>プッシュ通知トークン</strong>: プッシュ通知の送信に必要なデバイストークン、端末のプラットフォーム情報（iOS/Android）、言語設定。</li>
+  <li><strong>AIへの入力テキスト</strong>: ゲーム内でAIに送信した質問文および解答文。AIによる回答（はい／いいえ／関係ありません）の生成と正誤判定のため、後述の第三者AIサービスへ送信されます。同一の質問への応答を再利用するため、質問文とその回答は本アプリのサーバーにも保存されます。個人を特定できる情報を入力しないようご注意ください。</li>
+  <li><strong>クラッシュレポート</strong>: アプリの安定性向上のため、クラッシュ発生時の技術的情報（端末モデル、OSバージョン、エラー内容等）。</li>
+  <li><strong>広告関連情報</strong>: 広告の表示・最適化のために、広告識別子（IDFA/広告ID）が第三者の広告パートナーにより収集される場合があります。</li>
+</ul>
+<h2>2. 利用目的</h2>
+<p>収集した情報は以下の目的で利用します。</p>
+<ul>
+  <li>ゲーム進捗の保存・復元</li>
+  <li>ライフの管理と回復通知の送信</li>
+  <li>AIによる質問への回答および解答の正誤判定</li>
+  <li>アプリの不具合の検出・改善</li>
+  <li>広告の表示</li>
+</ul>
+<h2>3. 第三者サービス</h2>
+<p>本アプリは以下の第三者サービスを利用しています。各サービスのプライバシーポリシーもご確認ください。</p>
+<ul>
+  <li><strong>Supabase</strong>（認証・データベース）: <a href="https://supabase.com/privacy">https://supabase.com/privacy</a></li>
+  <li><strong>Firebase Crashlytics</strong>（クラッシュレポート）: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></li>
+  <li><strong>Google AdMob</strong>（広告配信）: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+  <li><strong>Expo</strong>（プッシュ通知）: <a href="https://expo.dev/privacy">https://expo.dev/privacy</a></li>
+  <li><strong>Moonshot AI PTE. LTD.（Kimi API）</strong>（AIによる回答・正誤判定）: <a href="https://www.kimi.ai/user/agreement/userPrivacy?version=v2">https://www.kimi.ai/user/agreement/userPrivacy?version=v2</a></li>
+  <li class="sub">AIへの入力テキストの送信先です。同社の公表内容によれば、API経由で送信されたデータはモデルの学習には利用されず、当該リクエストの処理のためだけに使用されます（<a href="https://www.kimi.ai/help/kimi-api/api-data-security">https://www.kimi.ai/help/kimi-api/api-data-security</a> ）。</li>
+</ul>
+<h2>4. 広告とトラッキング</h2>
+<p>本アプリはGoogle AdMobを利用して広告を表示します。iOSでは初回起動時にApp Tracking Transparency（ATT）ダイアログを表示し、トラッキングの許可を求めます。許可しない場合でもアプリの全機能をご利用いただけますが、表示される広告がパーソナライズされない場合があります。</p>
+<h2>5. データの保管</h2>
+<p>ゲームデータはSupabaseのサーバー（日本リージョン）に保管されます。データは匿名IDに紐づいており、個人を特定することはできません。</p>
+<p>なお、AIへの入力テキスト（質問・解答）は回答生成のため、上記の第三者AIサービスのサーバーへ国外送信されます。</p>
+<h2>6. データの削除</h2>
+<p>本アプリのデータ削除をご希望の場合は、下記のお問い合わせ先までご連絡ください。匿名IDに紐づくすべてのデータを削除いたします。</p>
+<h2>7. 子どものプライバシー</h2>
+<p>本アプリは13歳未満のお子様を対象としたものではありません。13歳未満のお子様から意図的に個人情報を収集することはありません。</p>
+<h2>8. ポリシーの変更</h2>
+<p>本ポリシーは予告なく変更される場合があります。変更があった場合は、本ページを更新し、最終更新日を変更します。</p>
+<h2>9. お問い合わせ</h2>
+<p>本ポリシーに関するお問い合わせは、以下までご連絡ください。</p>
+<p>メール: kurohune538@gmail.com</p>
+<footer>Maroon — 水平思考クイズ</footer>
+</main>
+</body>
+</html>
