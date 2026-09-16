@@ -2,7 +2,10 @@
 
 水平思考ミステリーアプリ **ナゾのスープ - 少女たちと解く水平思考ミステリー** のプライバシーポリシーを公開するためのリポジトリ。
 
-公開URL: https://kurohune538.github.io/maroon-privacy/
+公開URL:
+
+- プライバシーポリシー: https://kurohune538.github.io/maroon-privacy/
+- サポート: https://kurohune538.github.io/maroon-privacy/support.html
 
 ## 更新方法
 
